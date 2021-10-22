@@ -1,0 +1,29 @@
+.house {
+    padding: 80px 0 80px;
+
+    &-wrap {
+        display: flex;
+        gap: 37px;
+    }
+
+    &__image {
+        max-width: 388px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            display: none;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(16);
+        line-height: 20px;
+        font-weight: 500;
+        color: #777777;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

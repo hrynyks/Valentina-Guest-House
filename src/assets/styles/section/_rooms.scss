@@ -1,0 +1,52 @@
+.rooms {
+    padding-top: 44px;
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(320px, 598px));
+        gap: 24px;
+
+        @include a (tablet) {
+            grid-template-columns: minmax(320px, 598px);
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        padding-top: 132px;
+        &-1 {
+            background: url(/src/assets/images/rooms-item-1.png) center/cover;
+        }
+        &-2 {
+            background: url(/src/assets/images/rooms-item-2.png) center/cover;
+        }
+        &-3 {
+            background: url(/src/assets/images/rooms-item-3.png) center/cover;
+        }
+        &-4 {
+            background: url(/src/assets/images/rooms-item-4.png) center/cover;
+        }
+    }
+
+    &__content {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 6px 0 28px 35px;
+
+        &-title {
+            font-size: toRem(24);
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        &-item {
+            line-height: 17px;
+            color: #fff;
+            margin-bottom: 3px;
+
+            &:last-child() {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
